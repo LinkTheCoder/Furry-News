@@ -12,20 +12,20 @@ const posts = await getCollection('blog');
     <head>
         <BaseHead title="Blog Archive" description="Archive of all blog posts" />
     </head>
-    <body class="bg-white text-gray-800">
+    <body class=" text-gray-800">
         <Header />
         <main class="w-full max-w-3xl mx-auto p-4 sm:p-6 md:p-8">
             <h1 class="text-3xl sm:text-4xl font-bold mb-6">Archive</h1>
             <ul class="space-y-4">
                 {posts.map((post) => (
                     <li class="border-b pb-4 break-words">
-                        <a href={`/blog/${post.slug}`} class="text-xl sm:text-2xl font-semibold text-blue-600 hover:underline break-words w-full">
+                        <a href={`/blog/${post.slug}`} class="text-xl sm:text-2xl font-semibold hover:underline break-words w-full">
                             {post.data.title}
                         </a>
                         <div class="text-gray-500">
                             <FormattedDate date={post.data.pubDate} />
                         </div>
-                        <p class="text-gray-700 mt-2 break-words w-full">
+                        <p class="text-gray-400 mt-2 break-words w-full">
                             {post.data.description}
                         </p>
                     </li>
