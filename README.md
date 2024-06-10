@@ -1,6 +1,6 @@
 # Furry News
 
-<img src="https://i.imgur.com/J44eQuW.png" width="60%" />
+<img src="https://i.imgur.com/hM66STm.png" width="60%" />
 
 <br>
   
